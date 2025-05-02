@@ -29,20 +29,17 @@ class User extends Authenticatable implements MessengerProvider
         'password' => 'hashed',
     ];
 
-    public function getProviderName(): string
+    public static function getProviderSettings(): array
     {
-        return $this->name;
-    }
-
-    public function getProviderAvatarRoute(string $size = 'sm'): ?string
-    {
-        // You can implement custom avatar logic here
-        // For now, return null to use the default avatar
-        return null;
-    }
-
-    public function isMessengerBot(): bool
-    {
-        return false;
+        return [
+            'alias' => 'user',
+            'searchable' => true,
+            'friendable' => true,
+            'devices' => true,
+            'default_avatar' => public_path('vendor/messenger/images/users.png'),
+            'cant_message_first' => [],
+            'cant_search' => [],
+            'cant_friend' => [],
+        ];
     }
 }

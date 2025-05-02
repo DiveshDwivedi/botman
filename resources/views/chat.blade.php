@@ -12,9 +12,12 @@
 
     <script>
         var botmanWidget = {
+            chatServer: '/botman',
+            title: 'Chat with us',
             frameEndpoint: '/botman/chat',
             placeholderText: 'Type your message here...',
             introMessage: 'Hello! How can I assist you today?',
+            aboutText: 'Have a great day!',
             title: 'Chat with us',
         };
     </script>

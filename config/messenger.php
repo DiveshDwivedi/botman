@@ -12,7 +12,7 @@ return [
     | they all must have matching primary key types (int / char / etc).
     |
     */
-    'provider_uuids' => false,
+    'provider_uuids' => true,
 
     /*
     |--------------------------------------------------------------------------
