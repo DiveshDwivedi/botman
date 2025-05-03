@@ -35,6 +35,4 @@ class OnboardingConversation extends Conversation
     {
         $this->askFirstname();
     }
-
-    // MessengerComposer::to($thread)->from($user)->emitTyping()->message('Hello! What is your firstname?');
 }
